@@ -34,13 +34,13 @@ fn main() {
             if round.len() != 2 {
                 panic!("round results length is not 2!");
             }
-            let my_choice = match round[0] {
+            let opponent_choice = match round[0] {
                 "A" => Choice::Rock,
                 "B" => Choice::Paper,
                 "C" => Choice::Sissors,
                 _ => panic!("Error: Invalid choice {}", round[0]),
             };
-            let opponent_choice = match round[1] {
+            let my_choice = match round[1] {
                 "X" => Choice::Rock,
                 "Y" => Choice::Paper,
                 "Z" => Choice::Sissors,
